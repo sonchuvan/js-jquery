@@ -1,0 +1,93 @@
+/JS questions/
+1.
+slice(a,b) cho phép chỉ số âm
+subString(a,b) không cho phép chỉ số âm
+subStr(a,b) sẽ cắt b phần tử bắt đầu từ vị trí a
+2.
+var = "demo" là khai báo biến kiểu string
+var = new String("demo") khai báo biến là một đối tượng String
+nên dùng cách thứ 1 vì để tránh làm phức tạp code, và tăng tốc độ thực thi
+
+3.Có 2 cách truy cập vào thuộc tính của một object: 
+object.properyName (cách 1) hoặc object["propertyName"] (cách 2). 
+Điểm khác biệt của 2 cách này là gì?
+cách 1 dùng khi tên thuộc tính biết trước
+Cách khi tên thuộc tính là động , tức là được xác định trong thời gian chạy.
+    const property = 'name';
+    const hero = {
+    name: 'Batman'
+    };
+    // Square brackets property accessor:
+    hero['name'];   // => 'Batman'
+    hero[property]; // => 'Batman'
+
+4.Null khác gì với undefined?
+khai báo biến không gán giá trị thì biến sẽ là underfined
+null là object
+underfined là không xác định
+
+5. Khi function hello() là một phần tử thuộc mảng a ở vị trí thứ 3. Muốn gọi nó ra chạy thì cú pháp như thế nào?
+arrayMethods[2]();
+
+
+6. Kiểu dữ liệu của mảng là gì? Mảng có thể chứa các kiểu dữ liệu gì trong nó?
+- mảng có kiểu object
+- mảng có thể chứa 1 hoặc nhiều kiểu dữ liệu như số chữ object
+
+7. Điểm khác biệt giữa cách truy cập của mảng và object? Làm thế nào để nhận biết một biến a nào đó là một mảng?
+- mảng truy cập bằng chỉ mục được đánh số
+- object truy cập bằng chỉ mục được đặt tên
+ dùng hàm Array.isArray() hoặc toán tử instanceof
+
+8. Hoisting trong JS.
+Hoisting là hành vi mặc định của JavaScript để di chuyển các khai báo lên trên cùng.
+có thể dùng carName="honda" khi dùng biến var, không thể dùng nếu dùng let, const.
+
+9. Kết quả của các phép sau: 
++, 10 + 5 = 15
++, "10" + 5 = "105"
++, 10 + "5" = "105"
++, 10 + 20 + "5" = "305"
++, "10" + "5" = "105"
++, "10" + 20 + 5 = "10205"
++, 2**5 = 32
++, "10"/5 = 2
++, "10"/"5" = 2
++, "10"/"Abc" = NaN
+
+11. Kết quả của đoạn mã sau:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+person.fullName; => function(){.....}
+person.fullName(); => "John Doe".
+
+12. Switch-case hoạt động bằng phép so sánh nào?
+- "===" so sánh cả giá trị và kiểu dữ liệu 
+
+13. Kết quả của các phép so sánh sau:
++, null == undefined => true
++, null == null => true
++, typeof null == "object" => true
++, typeof null == "null" => false
++, null == NaN => false
++, NaN == NaN => false
++, typeof 10/"Ahihi" == "NaN" => false
+
+14. Tại sao nói String trong JS là bất biến (immutable)? Ví dụ chứng minh?
+<script>
+var s1 = "abc";
+var s2 = s1;
+s1 = "def";
+document.getElementById("demo").innerHTML = s2; => kết quả "abc"
+</script>
+
+15. Trong JS, khi có khối try mà không có catch có được không? 
+có khi theo sau khối try là finally
+
