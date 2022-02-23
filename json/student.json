@@ -1,0 +1,7 @@
+[
+    {"name":"John", "birthday":"1999-02-16","phone":"01234567", "hometown":"New York"},
+    {"name":"Mike", "birthday":"2000-02-16","phone":"01234567", "hometown":"New York"},
+    {"name":"Ana", "birthday":"1999-02-16","phone":"09876543", "hometown":"Tokyo"},
+    {"name":"Jack", "birthday":"2000-02-16","phone":"01234567", "hometown":"Ha Noi"},
+    {"name":"Sino", "birthday":"1997-02-16","phone":"01234567", "hometown":"Dehi"}
+]

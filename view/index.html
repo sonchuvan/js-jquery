@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>jQuery Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <form id="form" name="form">
+            <h1>Student form</h1>
+            <div class="div-input">
+                <label for="name">Name</label>
+                <input class="input" name="name" id="name" type="text"/>
+                <label></label><label id="validName" class="valid"></label>
+            </div>
+            <div class="div-input">
+                <label for="birthday">Birthday</label>
+                <input class="input" name="birthday" id="birthday" type="date"/>
+                <label></label><label id="validBirthday" class="valid"></label>
+            </div>
+            <div class="div-input">
+                <label for="phone">Mobile phone</label>
+                <input class="input" name="phone" id="phone" type="text"/>
+                <label></label><label id="validPhone" class="valid"></label>
+            </div>
+            <div class="div-input">
+                <label for="hometown">Hometown</label>
+                <input class="input" name="hometown" id="hometown" type="text"/>
+                <label></label><label id="validHometown" class="valid"></label>
+            </div>
+            <div class="div-input">
+                <input type="button" value="save" id="save">
+                <input type="button" value="Reset" id="reset">
+            </div>
+        </form>
+    </div>
+    <div class="button-tbl">
+        <input type="button" value="Delete" id="delete" disabled>
+        <input type="button" value="Edit" id="edit" disabled>
+    </div>
+    <table>
+        <tr id="th">
+            <th></th>
+            <th>Name</th>
+            <th>Birthday</th>
+            <th>Mobile phone</th>
+            <th>Hometown</th>
+        </tr>
+        
+    </table>
+</body>
+</html>
