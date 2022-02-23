@@ -78,7 +78,7 @@ function validateData() {
     flag = true;
     var nameRegex = /^[\w|\W]{1,50}$/i;
     var symbolRegex = /^[^`~!@#$%^&*\(\)\\\/<>,.'+=-_?;:"\{\}\[\]]$/;
-    var phoneRegex = /^[0-9]{1,10}$/;
+    var phoneRegex = /^[0-9]{10}$/;
     var hometownRegex = /^[\w,\W,]{1,100}$/i;
     dob = new Date($("#birthday").val());
     var today = new Date();
