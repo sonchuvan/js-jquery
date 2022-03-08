@@ -77,13 +77,13 @@ function clearForm() {
 function validateData() {
     flag = true;
     var nameRegex = /^[\w|\W]{1,50}$/i;
-    var symbolRegex = /^[^`~!@#$%^&*\(\)\\\/<>,.'+=-_?;:"\{\}\[\]]$/;
+    //var symbolRegex = /^[^`~!@#$%^&*\(\)\\\/<>,.\'+=-_?;:\"\{\}\[\]]$/;
     var phoneRegex = /^[0-9]{10}$/;
     var hometownRegex = /^[\w,\W,]{1,100}$/i;
     dob = new Date($("#birthday").val());
     var today = new Date();
     var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
-    if (nameRegex.test($("#name").val()) == false || symbolRegex.test($("#name").val()) == false) {
+    if (nameRegex.test($("#name").val()) == false) {
         flag = false;
         $("#validName").html("Name values is not valid");
     }
